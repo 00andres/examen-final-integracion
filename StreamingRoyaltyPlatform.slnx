@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Accounting.Api/Accounting.Api.csproj" />
+  <Project Path="Accounting.Client/Accounting.Client.csproj" />
+  <Project Path="Streaming.Api/Streaming.Api.csproj" />
+  <Project Path="Streaming.Client/Streaming.Client.csproj" />
+</Solution>
