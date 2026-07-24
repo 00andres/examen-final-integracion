@@ -23,7 +23,10 @@ Sistema distribuido de microservicios para la **gestión de reproducciones de vi
 - [API Endpoints y Ejemplos (cURL)](#-api-endpoints-y-ejemplos-curl)
 - [Guía de Pruebas (Flujo Exitoso y DLQ)](#-guía-de-pruebas-flujo-exitoso-y-dlq)
 
----
+
+
+
+
 
 ## 📱 Visión General
 
