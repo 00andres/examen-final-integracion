@@ -70,15 +70,16 @@ graph TD
 
     SC -->|POST /api/views| SAPI
     SAPI -->|Transacción Atómica| SDB
-    OW -->|Poll Outbox Table (FIFO)| SDB
+    OW -->|Poll Outbox Table FIFO| SDB
     OW -->|Publica Eventos| ASB
 
     REC -->|Consume Mensajes| ASB
     REC -->|Persiste Regalías| ADB
     REC -->|Mensaje Inválido| DLQ
-    AC -->|GET /api/royalties/{creatorId}| AAPI
+    AC -->|GET /api/royalties/creatorId| AAPI
 
     ASBUI -.->|Monitorea Colas| ASB
+
 ```
 
 ---
