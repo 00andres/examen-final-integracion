@@ -50,11 +50,13 @@ graph TD
         AC["Accounting Client (Web UI)"]
     end
 
+
     subgraph StreamingMicroservice["🎬 Microservicio Streaming"]
         SAPI["Streaming.Api"]
         SDB[(StreamingDb PostgreSQL)]
         OW["OutboxWorker (Background Service)"]
     end
+
 
     subgraph MessagingBroker["📩 Broker de Mensajería (Azure Service Bus Emulator)"]
         ASB["video-finished-queue"]
@@ -62,11 +64,13 @@ graph TD
         ASBUI["ASB Emulator UI"]
     end
 
+
     subgraph AccountingMicroservice["💰 Microservicio Accounting"]
         AAPI["Accounting.Api"]
         ADB[(AccountingDb PostgreSQL)]
         REC["RoyaltyEventConsumer (Background Worker)"]
     end
+
 
     SC -->|POST /api/views| SAPI
     SAPI -->|Transacción Atómica| SDB
